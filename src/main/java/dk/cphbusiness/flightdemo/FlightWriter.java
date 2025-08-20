@@ -35,7 +35,7 @@ public class FlightWriter {
 
         int offset = 0;
         FlightCollectionDTO flights = null;
-
+        
         for (int i = 0; i < numberOfRequests; i++) {
             urlString = String.format(urlString, new Utils().getPropertyValue("aviation.key"), limit, offset);
             URL url = new URL(urlString);
